@@ -106,8 +106,10 @@ cd /var/www/html/items-rest
 git clone https://github.com/schoolofcode-me/stores-rest-api.git .
 mkdir log
 sudo apt-get install python-pip python3-dev libpq-dev
-pip install virtualenv
-virtualenv venv --python=python3.5
+# pip install virtualenv
+# virtualenv venv --python=python3.5
+sudo apt-get install python3-venv
+sudo python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt 
 ```
